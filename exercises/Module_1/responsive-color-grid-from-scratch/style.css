@@ -1,0 +1,162 @@
+/* * {
+    margin: 0;
+    padding 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+#box {
+    border: 2px solid black;
+}
+
+#box > h1 {
+    background-color: dodgerblue;
+}
+
+@media only screen and (min-width: 400px){
+    #box {
+        border: 2px solid black;
+    }
+    
+    #box > h1 {
+        background-color: dodgerblue;
+    }
+}
+
+@media only screen (min-width: 650px) and (max-width: 700px){
+    #box {
+        border: 5px dashed purple;
+    }
+    #box > h1 {
+        backgroud-color: cornflowerblue;
+    }
+} */
+
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+/* 
+.color-boxes {
+    height: 200px;
+    width: 500px;
+    background-color: black;
+    margin: 5px;
+}
+
+#largest-box {
+    height: 200px;
+    width: 600px;
+    background-color: pink;
+}
+
+#dark-pink {
+    height: 75px;
+    width: 150px;
+    background-color: #EE2E84;
+}
+#dark-pink2 {
+    display: inline-block;
+    height: 75px;
+    width: 150px;
+    background-color: #EE2E84;
+    padding: 10px
+}
+#dark-pink3 {
+    height: 75px;
+    width: 150px;
+    background-color: #EE2E84; 
+}
+#dark-pink4 {
+    height: 75px;
+    width: 150px;
+    background-color: #EE2E84;
+}
+#light-blue {
+    height: 100px;
+    width: 300px;
+    background-color: #85CFD8;
+}
+#light-green {
+    height: 75px;
+    width: 200px;
+    background-color: #8DC63F;
+}
+#orange {
+    height: 75px;
+    width: 50px;
+    background-color: #E76E34; */
+}
+body{
+    height: 100vh;
+}
+.parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container{
+    height: 80%;
+    width: 80%;
+}
+
+.pink {
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+}
+
+.hotpink-container {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotpink {
+    background-color: hotpink;
+    height: 100px;
+    width: 24.5%;
+}
+
+.blue-container {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue {
+    background-color: skyblue;
+    height: 100px;
+    width: 50%;
+}
+.left {
+    margin-right: 2.5px;
+}
+.right{
+    margin-left: 2.5px;
+}
+
+.bottom-row {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green{
+    width: 75%;
+    height: 100px;
+    background-color: green;
+    margin-right: 2.5px;
+}
+.orange {
+    width: 25%;
+    height: 100px;
+    background-color: orange;
+    margin-left: 2.5px;
+}
