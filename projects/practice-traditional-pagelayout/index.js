@@ -1,3 +1,5 @@
+var readlineSync = require("readline-sync")
+
 // var result = document.querySelectorAll(".container > div")
 // console.log(Array.from(result))
 
@@ -19,8 +21,8 @@
 // p = document.getElementsByTagName("p")[0];
 // p.innerHTML = "changed again"
 
-// var text = document.querySelector("#header").textContent
-// document.querySelector("#paragraph").textContent = text
+var text = document.querySelector("#header").textContent
+document.querySelector("#paragraph").textContent = text
 
 // var header = document.getElementById("header")
 // header.style.color = "blue"
