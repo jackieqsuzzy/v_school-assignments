@@ -21,6 +21,7 @@ var num2 = readlineSync.question ("what is the second number?")
 var operatation = readlineSync.question ("what operation do you want to use?")
 
 function calculate (num1, num2, operation){
+    // above is like the toaster/placeholder
     if (operation === "+"){
         return addNum(num1, num2)
     } else if(operation === "-"){
@@ -33,5 +34,8 @@ function calculate (num1, num2, operation){
 }
 
 console.log(calculate(num1, num2, operation))
+// this is the argument where you enter what the placeholder represents
+
+
 
 
