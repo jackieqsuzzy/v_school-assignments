@@ -32,6 +32,7 @@ while(isAlive && !hasWon){
         isAlive = false
     }
 }
+
 function walk (){
     const random = Math.floor(Math.random()*4)+1
     if(random === 1){
@@ -40,15 +41,15 @@ function walk (){
         console.log('You walk peacefully')
     }
 }
-function randomDamage () {
-    
-}
+
 function run(){
     const escape = Math.floor(Math.random() * 3)
     if (escape === 1){
         walk()
-        }
+    }
     else if (escape === 2)
+
+
     console.log("you didnt escape")
         enemyEncounter()
     }
@@ -73,12 +74,27 @@ function fight(enemy){
     while (player1.hp > 0 && enemy.hp > 0){
         const attackDamage = Math.floor(Math.random() * 5) + 5
         enemy.hp = enemy.hp - attackDamage
-        console.log("the " + enemy.name + " did this much damage now your hp is this")
+        console.log("the " + enemy.name + " did " + attackDamage +  " points of damage now your hp is this")
         player1.hp = player1.hp - attackDamage
         console.log(enemy.hp)
         console.log(player1.hp)
 
     }
+    if (player1.hp > 0 && enemy.hp <= 0){
+        kills(enemy)
+    } else {
+        enemyKills(enemy)
+    }
+        
 }
-
-
+function kills(enemy){
+    player1.inventory.push('Web Slinger')
+    console.log("You defeated the enemy and picked a Web Slinger")
+}
+function enemyKills(enemy){
+    if (player1.hp <= 0 && enemy.hp <= 0){
+        console.log("You and Enemy killed eachother")
+    } else {
+        console.log("You were defeated by the enemy, Game Over")
+    }
+}
