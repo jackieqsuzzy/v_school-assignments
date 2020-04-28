@@ -1,0 +1,12 @@
+
+
+function Car(make, model, numberOfWheels = 4){
+    this.make = make
+    this.model = model
+    this.numberOfWheels = numberOfWheels
+}
+
+var fordCar = new car ("ford", "e150", "4")
+console.log(fordCar)
+=> 
+
