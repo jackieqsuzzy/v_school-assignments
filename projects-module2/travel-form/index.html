@@ -10,22 +10,24 @@
 </head>
 <h1>Travel Form</h1>
 <body>
-    <form name = "my-form" >
-        <input type = "text" placeholder="First Name" name = "firstname" required/>
-        <input type = "text" placeholder="Last Name" name = "lastname" required/>
+    <form name = "myForm" >
+        <input type = "text" placeholder="First Name" name = "firstName" required/>
+        <input type = "text" placeholder="Last Name" name = "lastName" required/>
         <input type = "number" placeholder="Age" name = "age" required />
        Male: <input type = "radio" name="gender" value = "Male"/>
        Female: <input type = "radio" name="gender" value = "Female"/>
        <br>
-       Fiji: <input type = "checkbox" name ="location"/> 
-       Bahamas: <input type = "checkbox" name ="location"/>
-       Bermuda Triangle: <input type = "checkbox" name ="location"/>
+       <select name = "location">
+           <option value = "Fiji">Fiji</option>
+           <option value = "Bahamas">Bahamas</option>
+           <option value = "Bermuda Triangle">Bermuda Triangle</option>
+       </select>
        <br>
        Dietary Restrictions:
        <br> 
-       Vegetarian: <input type = "checkbox" name = "food"/>
-       Vegan: <input type = "checkbox" name = "food"/>
-       Gluten Free: <input type = "checkbox" name = "food"/>
+       Vegetarian: <input type = "checkbox" value = "Vegetarian" name = "food"/>
+       Vegan: <input type = "checkbox" value = "Vegan" name = "food"/>
+       Gluten Free: <input type = "checkbox" value = "Gluten Free" name = "food"/>
         <br>
        <button>Submit</button>
         
