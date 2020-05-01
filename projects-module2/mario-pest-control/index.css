@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: comic sans ms;
+}
+
+h2 {
+    text-align: center;
+    
+    
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    align-items: center;
+}
+
+form {
+   padding: 50px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: auto;
+    margin-top: 1cm;
+}
+
+
+#goomba {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    padding-top: 1cm;
+    
+    
+}
+input {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    margin-top: 1cm;
+
+}
+
+#bob-ombs{
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    padding: 1cm;
+}
+
+#cheep-cheeps{
+    width: 200px;
+    height:auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto; 
+    padding: 1cm;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#baddieTotal {
+    padding: 20px;
+    border: 1px dotted blue;
+
+}
+
+
