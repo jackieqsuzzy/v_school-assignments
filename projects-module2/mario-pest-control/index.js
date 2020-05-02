@@ -1,4 +1,15 @@
 const baddieTotal = document.marioBaddies 
+const timer = 10
+document.getElementById("clicker").innerHTML = localStorage.clickcount
+document.getElementById("timer").innerHTML = String(timer)
+
+function timerCountDown() {
+    if (timer > 0) {
+        setInterval(() => {
+            timer = timer - 1
+        }, 1000)
+    }
+}
 
 baddieTotal.addEventListener("submit", function(){
     event.preventDefault()
@@ -8,7 +19,16 @@ baddieTotal.addEventListener("submit", function(){
     let totalbaddie = baddie1 + baddie2 + baddie3
     const newTotal = document.getElementById("baddieTotal")
     newTotal.textContent =`Total Coins ${totalbaddie}`
-
+    if (timer >= 10) {
+    if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("clicker").innerHTML = "You have clicked the button " +
+      localStorage.clickcount + " time(s).";
+    }
 })
 
-const 
+
+
