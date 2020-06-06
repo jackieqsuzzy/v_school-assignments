@@ -41,7 +41,7 @@ class Player {
         this.totalCoins++
     }
     print(){
-        console.log(` Name : ${this.name} \r\n Total Coins ${this.totalCoins} \r\n Status: ${this.status}`)
+        console.log(` Name : ${this.name} \r\n Total Coins: ${this.totalCoins} \r\n Status: ${this.status} \r\n`)
     }
 }
 

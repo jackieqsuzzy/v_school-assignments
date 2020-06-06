@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "appetizers": {
+                "name": "artichoke dip",
+                "ingredients": "artichokes, cream, cheese, spinach, bread",
+                "description": "enjoy a delicous house made artichoke dip dipped with our homemade artisan bread"
+            }
+        },
+        {
+            "sandwhich's": {
+                "name": "french dip",
+                "ingredients": "roasted beef, jalapeno jelly, pepper jack cheese, sough dough bread",
+                "description": "enjoy our slow roasted beef with our house made jalapeno jelly grilled on our sough dough bread"
+            }
+        }
+    ]
+}
