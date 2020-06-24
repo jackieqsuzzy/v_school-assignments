@@ -1,0 +1,111 @@
+/* h1 {
+    text-align: center;
+    justify-content: center;
+}  
+
+.descrip {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.enterList {
+    justify-content: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+/* img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+#checkbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px;
+}
+
+.todo-container h1 {
+    text-align: center;
+}
+
+.todo-container p {
+    text-align: center;
+    
+}
+
+.todo-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
