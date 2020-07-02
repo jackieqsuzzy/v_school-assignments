@@ -103,3 +103,25 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 400px){
+
+
+    
+    .container1 {
+        grid-column: 1fr;
+    }
+
+    .sideBar2 {
+        grid-row: 9;
+    }
+
+    .sideBar3 {
+        grid-row: 9;
+    }
+
+    .rightSideBar1 {
+        grid-row: 9;
+    }
+
+}

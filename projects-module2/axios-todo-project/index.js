@@ -18,10 +18,6 @@ function makeToDo(toDo) {
         const delBtn = document.createElement("button")
         const checkBox = document.createElement("input")
 
-        // checkBox.className = "checkbox"
-        // description.className = "descrip"
-        // img.className = "editImg"
-
         title.textContent = toDo.title
         description.textContent = toDo.description
         img.src = toDo.imgUrl
@@ -36,7 +32,7 @@ function makeToDo(toDo) {
             console.dir(delBtn)
         })
         
-        if(toDo.completed) title.classList.add("completed"); checkBox.checked = false
+        if(toDo.completed) title.classList.add("completed"); checkBox.checked = toDo.completed
 
         todoContainer.appendChild(title)
         todoContainer.appendChild(description)
@@ -48,14 +44,15 @@ function makeToDo(toDo) {
 
         checkBox.addEventListener("change", () => {
             const id = toDo._id
-
+            axios.put("https://api.vschool.io/jackiesw/" + id, {completed: checkBox.checked}).then(response => {
+                console.log(response.data)
+            })
             if(checkBox.checked){
                 title.classList.add("completed")
-                editToDo(toDo._id, {completed: true})
             } else {
                 title.classList.remove("completed")
-                editToDo(toDo._id, {completed: false})
             }
+            editToDo(toDo._id, {completed: checkBox.checked})
         })
 }
 
