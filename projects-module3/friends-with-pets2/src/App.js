@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import FriendsList from "./Friendlist"
 
 function App() {
   return (
